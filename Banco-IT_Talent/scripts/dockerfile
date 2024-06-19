@@ -2,6 +2,8 @@
 FROM mysql:latest
 
 # Definir variáveis de ambiente para configurar o MySQL
+ENV MYSQL_IP=127.0.0.1
+ENV MYSQL_PORT=3306
 ENV MYSQL_DATABASE=BANCO_DADOS_IT_TALENT
 ENV MYSQL_ROOT_PASSWORD=root
 
