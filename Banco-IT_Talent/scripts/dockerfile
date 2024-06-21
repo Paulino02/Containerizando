@@ -1,15 +1,9 @@
-# Use a imagem oficial do MySQL
 FROM mysql:latest
-
-# Definir variáveis de ambiente para configurar o MySQL
-ENV MYSQL_IP=127.0.0.1
-ENV MYSQL_PORT=3306
+ENV MYSQL_USER=myuser
+ENV MYSQL_ROOT_PASSWORD=pass
+ENV MYSQL_PASSWORD=pass
 ENV MYSQL_DATABASE=BANCO_DADOS_IT_TALENT
-ENV MYSQL_ROOT_PASSWORD=root
 
-# Copiar o arquivo SQL para o diretório docker-entrypoint-initdb.d/
-# O MySQL executará qualquer arquivo .sql nesse diretório durante a inicialização
 COPY ./dump.sql /docker-entrypoint-initdb.d/
 
-# Opcional: expor a porta do MySQL (padrão é 3306)
 EXPOSE 3306
