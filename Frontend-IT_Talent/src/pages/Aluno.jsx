@@ -5,20 +5,20 @@ import { Container, Row, Col, Table } from 'react-bootstrap';
 
 function Aluno() {
     const { id } = useParams();
-    const [aluno, setAluno] = useState([null]);
-    const base = "http://localhost:8080"
+    const [aluno, setAluno] = useState(null);  // Estado inicial deve ser null
+    const base = "http://localhost:8080";
 
     useEffect(() => {
         const pegaAluno = async () => {
             try {
-                const res = await axios.get(`${base}/aluno/${id}`); 
-                setAluno(res.data[0]);
-                console.log(res.data[0]);
-                console.log(id)
+                const res = await axios.get(`${base}/aluno/${id}`);
+                setAluno(res.data);  // Atribuir diretamente res.data
+                console.log(res.data);
+                console.log(id);
             } catch (error) {
                 console.log(error);
             }
-        }
+        };
         if (id) pegaAluno();
     }, [id]);
 
