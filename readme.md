@@ -3,6 +3,7 @@
 ![alt text](bd-back-front.png)
 
 # Sistema de Gerenciamento de Alunos.
+Containerizando uma API de gerenciamento de alunos, construída com Node.js, Express, e MySQL. A API permite listar todos os alunos, obter detalhes de um aluno específico e adicionar novos alunos.
 
 # Endpoint /alunos
 ![alt text](alunos.png)
