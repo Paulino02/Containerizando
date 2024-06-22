@@ -1,5 +1,3 @@
-Claro! Aqui está um exemplo de um README bem documentado para o seu projeto.
-
 ## Projeto de Gerenciamento de Alunos
 
 ### Descrição
