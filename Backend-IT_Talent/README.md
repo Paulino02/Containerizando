@@ -140,14 +140,3 @@ curl -X GET http://localhost:8080/aluno/1
 ```sh
 curl -X POST http://localhost:8080/alunos -H "Content-Type: application/json" -d '{"nome":"João", "idade":27, "cidade":"Salvador"}'
 ```
-
-### Contribuindo
-Se você deseja contribuir com o projeto, por favor, siga as instruções abaixo:
-1. Faça um fork do projeto.
-2. Crie uma nova branch (`git checkout -b feature/nova-feature`).
-3. Faça suas alterações e commite (`git commit -am 'Adiciona nova feature'`).
-4. Envie para o branch (`git push origin feature/nova-feature`).
-5. Abra um Pull Request.
-
-### Contato
-Se você tiver alguma dúvida, sinta-se à vontade para abrir uma issue ou entrar em contato.
