@@ -4,3 +4,12 @@
 
 # Sistema de Gerenciamento de Alunos.
 
+# Endpoint /alunos
+![alt text](alunos.png)
+
+# Endpoint /create
+![alt text](create.png)
+
+# Endpoint /aluno
+![alt text](aluno.png)
+
