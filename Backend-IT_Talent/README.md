@@ -3,19 +3,6 @@
 ### Descrição
 Este projeto consiste em uma API de gerenciamento de alunos, construída com Node.js, Express, e MySQL. A API permite listar todos os alunos, obter detalhes de um aluno específico e adicionar novos alunos.
 
-### Estrutura do Projeto
-```
-your-project/
-├── node_modules/
-├── public/
-├── src/
-│   ├── database.js
-│   ├── index.js
-│   └── .env
-├── package.json
-└── README.md
-```
-
 ### Dependências
 O projeto utiliza as seguintes dependências:
 - express
