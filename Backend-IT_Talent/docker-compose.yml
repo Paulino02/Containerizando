@@ -4,7 +4,7 @@ services:
       context: ../Banco-IT_Talent/scripts/  # onde irá pegar o dockerfile para criar a imagem.
     container_name: bd
     ports:
-      - "3306:3306"
+      - "3306:3306" # The "ports:" key publishes the particular service on whatever port you specify, and is the docker run equivalent to the -p flag.
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_USER: ${MYSQL_USER}
