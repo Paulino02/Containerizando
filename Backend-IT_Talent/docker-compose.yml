@@ -1,5 +1,5 @@
 services:
-  bd:
+  bd: # DNS names (set as aliases) for containers in a compose file come from the service name declared in the .yml
     build:
       context: ../Banco-IT_Talent/scripts/  # onde irá pegar o dockerfile para criar a imagem.
     container_name: bd
