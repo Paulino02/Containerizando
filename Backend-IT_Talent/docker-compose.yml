@@ -29,7 +29,7 @@ services:
   
   frontend:
     build:
-      context: ../Frontend-IT_Talent/
+      context: ../Frontend-IT_Talent/ # onde irá pegar o dockerfile para criar a imagem.
     container_name: frontend
     depends_on:
       - backend
