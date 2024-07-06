@@ -1,7 +1,7 @@
 services:
   bd:
     build:
-      context: ../Banco-IT_Talent/scripts/
+      context: ../Banco-IT_Talent/scripts/  # onde irá pegar o dockerfile para criar a imagem.
     container_name: bd
     ports:
       - "3306:3306"
@@ -13,7 +13,7 @@ services:
 
   backend:
     build:
-      context: .
+      context: . # The "." indicates the dockerfile exists in the same directory as the compose file.
     container_name: backend
     depends_on:
       - bd
